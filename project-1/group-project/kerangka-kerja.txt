@@ -1,0 +1,65 @@
+#topup
+select dari tabel user untuk mengambil saldo awal user, kemudian di tambah dg nominal yg di topup. setelah itu update saldo user (saldo awal + saldo input)
+#transfer
+-) ambil nomor pengirim untuk mengurangi saldo, update status (pending!)
+-) ambil nomor penerima untuk menambah saldo, update status (succes!)
+-) input nilai untuk di kurangi bagi pegirim dan di tambahkan bagi penerima
+
+target kerja group-project8
+1. skema database + skeleton
+2. selasa 
+	main.go
+	proses login
+	register
+	kerangka menu
+3. rabu
+	profil CRUD(create, read, update, delete)
+	transaksi (topup + transfer)
+	==
+	TOPUp
+	==
+	input() {
+	hasilkan inputan no telp, saldo_topup
+	}
+
+	update() {
+	select saldo from users + saldo_topUp from tabel detail
+	== 
+	userNew.Saldo
+	}
+
+	getData() {
+	ambil data dari func update() _userNew.Saldo
+	}
+	==
+	TRANSFER
+	==
+	input() {
+	hasilkan inputan no telp_sender, no telp_receiver, saldo_transfer
+	}
+
+	updateSaldoSender() {
+	saldo_awal - saldo_transfer
+	==
+
+	}
+
+	updateSaldoReceiver() {
+	saldo_awal - saldo_transfer
+	==
+
+	}
+4. kamis
+	Update fitur
+-) setelah registrasi di kembalikan ke menu utama
+-) setelah topup di kembalikan ke menu utama
+-) setelah lihat history transfer/topup di kasih kondisi ke menu utama
+-) setelah lihat menu profil teman di kembalikan ke menu utama
+	kurang kodingan
+-) Transfer
+-) history transfer
+
+malam ini kita selesai sih harusnya udh ada gambaran di menu transfer yang di ambil di fitur topup nanti kita jam 8an kita 
+kumpul di discord seperti biasa ya mas, atau ada fitur tambahan yang mau di tambhkan chat aja ntar saya masukkan
+
+dan code review

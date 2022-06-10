@@ -1,0 +1,7 @@
+rename .env.example => CLI: cp .env.example .env
+
+git /feature:
+git feature/login -> git checkout -b feature/login
+                  -> git push -u origin feature/login
+
+jalankan database -> Source .env
